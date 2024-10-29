@@ -18,3 +18,12 @@ ro.lmk.psi_partial_stall_ms=150
 ro.lmk.psi_complete_stall_ms=700
 ro.lmk.swap_util_max=100
 ro.lmk.log_stats=true
+
+# Broadcast Parameters used isLowRamDeviceStatic values
+persist.device_config.activity_manager_native_boot.bcast_max_running_active_broadcasts=8
+persist.device_config.activity_manager_native_boot.bcast_max_core_running_blocking_broadcasts=8
+persist.device_config.activity_manager_native_boot.bcast_max_core_running_non_blocking_broadcasts=32
+persist.device_config.activity_manager_native_boot.bcast_max_pending_broadcasts=128
+persist.device_config.activity_manager_native_boot.bcast_max_history_complete_size=64
+persist.device_config.activity_manager_native_boot.bcast_max_history_summary_size=256
+persist.device_config.activity_manager_native_boot.bcast_max_running_process_queues=2
