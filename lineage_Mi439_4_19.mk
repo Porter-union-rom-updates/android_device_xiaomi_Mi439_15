@@ -31,6 +31,20 @@ PRODUCT_PACKAGES += \
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
 
+
+
+# RisingTechOSS Flags
+TARGET_DEFAULT_PIXEL_LAUNCHER := false 
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+
+# RisingOS Stuffs
+#ROM_FOLDER := lineage
+RISING_MAINTAINER=FARHAN•AFK
+WITH_GMS := true
+TARGET_CORE_GMS := true
+PRODUCT_NO_CAMERA := false
+
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Mi439_4_19
 PRODUCT_NAME := lineage_Mi439_4_19
@@ -46,3 +60,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="olive-user 10 QKQ1.191014.001 V12.5.1.0.QCNMIXM release-keys" \
     BuildFingerprint=Xiaomi/olive/olive:10/QKQ1.191014.001/V12.5.1.0.QCNMIXM:user/release-keys
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME="Mi439_4_19" \
+    RISING_MAINTAINER="FARHAN•AFK" \
+    RISING_CHIPSET="SDM439"
